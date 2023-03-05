@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Github</title>
+    <!-- Tambahkan sumber daya Axios -->
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              "light-green": "#DDF7E3",
+            },
+          },
+        },
+      };
+    </script>
+  </head>
+  <body>
+    <div class="sticky top-0 w-full bg-light-green">
+      <div class="flex justify-between container px-4 py-2 m-auto">
+        <div class="flex items-center">
+          <img class="w-8 h-8" src="./assets/github-icon.png" alt="" />
+          <input
+            class="border border-black rounded-md px-2 ml-4"
+            type="text"
+            placeholder="Search or jump to..."
+            name=""
+            id="username"
+          />
+          <div class="flex items-center">
+            <button
+              type="button"
+              id="getUser"
+              class="bg-black text-white text-sm rounded-md px-4 py-1 ml-4"
+            >
+              Search
+            </button>
+            <div class="font-bold ml-4">Pull Request</div>
+            <div class="font-bold ml-4">Issues</div>
+          </div>
+        </div>
+        <div>
+          <img
+            id="user-image"
+            class="w-8 h-8 rounded-full"
+            src="./assets/github-icon.png"
+            alt=""
+          />
+        </div>
+      </div>
+    </div>
+    <div class="min-h-screen">body</div>
+    <script src="main.js"></script>
+  </body>
+</html>
